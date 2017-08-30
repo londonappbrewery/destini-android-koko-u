@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="paperparcel-2.0.4">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/paperparcel-2.0.4.aar/3c0fe6bdcdaa02d58bab1123ee00bdfc/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/paperparcel-2.0.4.aar/3c0fe6bdcdaa02d58bab1123ee00bdfc/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/nz.bradcampbell/paperparcel/2.0.4/b951c94bdcf1fd35f2c20c1f0a453d5a255bc6ca/paperparcel-2.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

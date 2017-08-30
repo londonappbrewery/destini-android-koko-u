@@ -1,6 +1,7 @@
 package com.londonappbrewery.destini.activity
 
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import com.londonappbrewery.destini.R
@@ -20,7 +21,11 @@ class MainActivity : AppCompatActivity(), AnkoLogger {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        currentStory = createStory()
+        if (savedInstanceState == null) {
+            currentStory = createStory()
+        } else {
+            currentStory = savedInstanceState.getParcelable(MainActivity::currentStory.name)
+        }
         displayStory(currentStory)
 
         btn_upper.setOnClickListener {
@@ -44,6 +49,11 @@ class MainActivity : AppCompatActivity(), AnkoLogger {
             }
 
         }
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        outState.putParcelable(MainActivity::currentStory.name, currentStory)
+        super.onSaveInstanceState(outState)
     }
 
     private fun displayStory(story: Node) {

@@ -1,5 +1,9 @@
 package com.londonappbrewery.destini.model
 
+import android.os.Parcelable
+import paperparcel.PaperParcel
+import paperparcel.PaperParcelable
+
 /**
  *
  * Story1 -> Ans1 -> Story3 -> Ans1 -> End6
@@ -28,28 +32,40 @@ package com.londonappbrewery.destini.model
  * }
  */
 
-abstract class Node(
-        val description: String) {
+abstract class Node(val description: String) : PaperParcelable {
 
     open val upperAnswer: Answer get() = emptyAnswer()
     open val lowerAnswer: Answer get() = emptyAnswer()
     abstract val isEnd: Boolean
 }
 
-
+@PaperParcel
 class Story(
         description: String,
         override val upperAnswer: Answer,
         override val lowerAnswer: Answer
 ) : Node(description) {
+
+    companion object {
+        @JvmField val CREATOR = PaperParcelStory.CREATOR
+    }
     override val isEnd: Boolean get() = false
 }
 
+@PaperParcel
 class End(description: String) : Node(description) {
+    companion object {
+        @JvmField val CREATOR = PaperParcelEnd.CREATOR
+    }
     override val isEnd: Boolean get() = true
 }
 
-data class Answer(val answer: String, val nextStory: Node)
+@PaperParcel
+data class Answer(val answer: String, val nextStory: Node) : PaperParcelable {
+    companion object {
+        @JvmField val CREATOR = PaperParcelAnswer.CREATOR
+    }
+}
 
 fun story(description: String, action: StoryBuilder.() -> Unit): Story {
     val builder = StoryBuilder(description)
