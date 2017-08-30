@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Destini</string>
+    <string name="T1_Story">あなたの車は、携帯の電波の届かない曲がりくねった道の真ん中でパンクしてしまいました。そこでヒッチハイクすることにしました。 錆びたピックアップトラックがあなたの元にやってきました。生気のない目をしたつば広帽子の男はドアを開いて言います「乗っていくかい？」</string>
+    <string name="T1_Ans1">勇んで乗む「助かった」</string>
+    <string name="T1_Ans2">もし殺人鬼だったら、どうしよう。もう少し質問する</string>
+    <string name="T2_Story">彼は質問に腹を立てることなく、ゆっくりと頷きました。</string>
+    <string name="T2_Ans1">どうやら彼は正直者のようだ。車に乗り込む。</string>
+    <string name="T2_Ans2">待つんだ。タイヤの交換方法なら知っているぞ。</string>
+    <string name="T3_Story">運転を始めると、男は母親との関係について話し始めました。彼はだんだんと怒りはじめ、あなたにグローブボックスを開くように頼んできました。そこには、血のついたナイフ、切断された2本の指、エルトン・ジョンのカセットテープ。男はグローブボックスに手を延して</string>
+    <string name="T3_Ans1">エルトン・ジョンのファンなんだ。彼にカセットテープを手渡す</string>
+    <string name="T3_Ans2">生きるか死ぬかだ。彼をナイフで刺す</string>
+</resources>

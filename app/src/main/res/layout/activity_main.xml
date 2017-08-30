@@ -8,23 +8,22 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.londonappbrewery.destini.MainActivity"
+    tools:context="com.londonappbrewery.destini.activity.MainActivity"
     android:background="@drawable/background">
 
 
-
     <TextView
-        android:id="@+id/storyTextView"
-        android:text="@string/T1_Story"
+        android:id="@+id/tv_story"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:textSize="24sp"
-        android:textColor="#ffffffff"/>
+        android:layout_alignParentRight="true"
+        android:text="@string/T1_Story"
+        android:textColor="#ffffffff"
+        android:textSize="24sp" />
 
     <Button
-        android:id="@+id/buttonTop"
+        android:id="@+id/btn_upper"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/T1_Ans1"
@@ -39,18 +38,18 @@
         android:textSize="15sp"/>
 
     <Button
-        android:id="@+id/buttonBottom"
+        android:id="@+id/btn_lower"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/T1_Ans2"
+        android:layout_alignEnd="@+id/btn_upper"
+        android:layout_alignLeft="@+id/btn_upper"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/buttonTop"
-        android:layout_alignStart="@+id/buttonTop"
-        android:layout_alignRight="@+id/buttonTop"
-        android:layout_alignEnd="@+id/buttonTop"
+        android:layout_alignRight="@+id/btn_upper"
+        android:layout_alignStart="@+id/btn_upper"
         android:background="#3498db"
+        android:text="@string/T1_Ans2"
         android:textColor="#ecf0f1"
-        android:textSize="15sp"/>
+        android:textSize="15sp" />
 
 
 
